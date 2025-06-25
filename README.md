@@ -1,7 +1,7 @@
 # Introductory Projects – Arduino, NS-3, and RISC-V Assembly
 
 These projects were developed during my early university years while exploring different domains: **Embedded Systems**, **Network Simulation**, and **Computer Architecture**.  
-Though introductory in nature, they helped me understand the fundamentals of hardware control, real-time simulation, and low-level logic
+They helped me understand the fundamentals of hardware control, real-time simulation, and low-level logic
 — and sparked ideas for future, more advanced work.
 
 Each project reflects a stepping stone toward deeper knowledge in **IoT**, **network behavior**, and **assembly-level computation**.
