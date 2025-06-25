@@ -1,0 +1,11 @@
+📡 NS-3 TCP Simulation: DropTail vs RED Queuing
+
+This project simulates a custom network topology in NS-3 using C++ to compare the behavior of two different queuing disciplines: 
+DropTail (default) and RED (Random Early Detection).
+
+The simulation models a simple 4-node topology with TCP bulk senders and a shared bottleneck link. It monitors TCP congestion window evolution 
+and received bytes to evaluate performance under different queue management strategies.
+
+📁 Files
+original.cc – The base simulation using DropTailQueue on the bottleneck link.
+red.cc – A modified version using RedQueueDisc (RED AQM) with tunable RED parameters.

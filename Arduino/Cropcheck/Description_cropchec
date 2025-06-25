@@ -1,0 +1,47 @@
+# 🌾 CropCheck - Smart Agriculture Monitoring Device
+
+**CropCheck** is a portable, Arduino-based prototype developed for **AgriTech, Inc.** to monitor and evaluate crop conditions in real time.  
+The device combines multiple sensors and outputs to provide farmers with fast, visual, and tactile feedback about environmental conditions and seed quality.
+
+---
+
+## ✅ Core Functionalities
+
+### T1. Environmental Monitoring  
+- Monitors **ambient light**, **temperature**, and **humidity** every 5 seconds.  
+- Displays readings via the **Serial Monitor**.  
+- Compares sensor values against **predefined thresholds** stored in persistent memory.
+
+### T2. Data Visualization  
+- A **30-LED RGB strip** provides intuitive visual feedback:  
+  • **LEDs 0–2** indicate the active sensor (light, temperature, humidity)  
+  • **LEDs 11–20** show proportional value levels  
+  • **Color-coded alerts**:
+    - 🟩 Green: Value within range  
+    - 🟨 Yellow: Below minimum threshold  
+    - 🔴 Blinking Red: Above maximum threshold  
+
+### T3. Seed Evaluation Mode  
+- A **touch sensor** triggers a **servo-operated lid** to insert seeds.  
+- A **vibration motor** shakes the seeds with strength controlled by a **potentiometer**.  
+- The **LED strip pulses green** in intensity during the shaking process.  
+- When the potentiometer is reset to 0, the lid reopens automatically.
+
+### T4. Distance Alert System  
+- An **ultrasonic sensor** detects obstacles ahead.  
+- If an object is within **30 cm**, the system enters alert mode:
+  - The **vibration motor** activates
+  - **All LEDs blink red**
+  - The **servo motor is temporarily disabled** during this alert to avoid interference
+
+---
+
+## 🔧 Code Structure
+
+To keep the implementation modular, the system is split into two Arduino sketch files:
+
+- `CropCheck_T1_T2.ino`: Handles environmental monitoring and LED-based visualization  
+- `CropCheck_T3_T4.ino`: Handles seed evaluation and distance alert functionality
+
+---
+

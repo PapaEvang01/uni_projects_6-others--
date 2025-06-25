@@ -1,0 +1,28 @@
+============================================================
+🛠️ Early Hardware Projects in RISC-V Assembly
+============================================================
+
+These were among the first assembly programs I wrote during my university
+labs in systems and computer architecture. Using the RISC-V instruction set,
+I explored how high-level logic is translated into low-level hardware control
+through register operations, loops, and memory addressing.
+
+Below are two simple but educational projects that reflect this learning journey.
+
+------------------------------------------------------------
+🧮 Fibonacci Sequence in RISC-V
+------------------------------------------------------------
+A command-line program that prints the first `n` terms of the Fibonacci sequence.
+It takes user input and calculates the sequence using registers and control flow.
+
+🛠️ Focus: `ecall` system calls, register manipulation, loops  
+💻 Tool: RARS  (RISC-V simulator)
+
+------------------------------------------------------------
+🟢 Row Sum of a 2D Array
+------------------------------------------------------------
+A reimplementation of a C function that computes the row-wise sum of a 2D array.
+This project demonstrates memory addressing, pointer arithmetic, and nested loops.
+
+🛠️ Focus: 2D memory traversal, array indexing, instruction flow  
+💻 Tool: RARS  (RISC-V simulator)

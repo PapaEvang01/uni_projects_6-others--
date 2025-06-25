@@ -1,0 +1,16 @@
+🧮 Fibonacci Sequence in RISC-V Assembly
+
+This project implements a simple command-line program in RISC-V Assembly that calculates and prints the Fibonacci sequence up to a user-defined number of terms.
+It was designed as a compact exercise to practice register manipulation, looping, and basic I/O using the RISC-V ecall interface.
+
+Upon execution, the program:
+
+Prompts the user to enter an integer n
+
+Prints the first n terms of the Fibonacci sequence (starting from 1)
+
+This project demonstrates key low-level programming concepts such as conditional branching, arithmetic operations, 
+and using system calls for interactive input/output. It’s a great example of how classic algorithms can be expressed at the assembly level on the RISC-V architecture.
+
+💻 Tools used: RARS or Venus RISC-V simulator
+🛠️ Topics: branching, integer registers, syscall interface, arithmetic loops

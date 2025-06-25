@@ -1,0 +1,81 @@
+# 🛠️ Arduino Projects
+
+These two Arduino-based projects demonstrate my practical skills in **embedded systems**, **sensor integration**, **actuator control**, 
+**real-time data handling**, and **IoT development**. 
+Both systems were designed, coded, and tested using the **ESP32** microcontroller, showcasing my ability to build **modular**, 
+**interactive**, and **responsive** hardware solutions from concept to implementation.
+
+> These projects were developed during my **Erasmus program at the University of Deusto, Spain**, and reflect foundational yet important skills in Arduino and physical computing.
+
+---
+
+## 🌿 Project 1: CropCheck – Smart Agriculture Monitoring Device
+
+**CropCheck** is a multi-functional portable device for real-time environmental monitoring and interaction in agricultural settings. 
+Developed as part of a smart farming initiative, it combines sensor input and actuator output to deliver intuitive, real-time insights.
+
+### 🔧 Key Features
+
+- **T1: Environmental Monitoring**  
+  Reads **ambient light**, **temperature**, and **humidity** every 5 seconds with output to the Serial Monitor.
+
+- **T2: RGB LED Visualization**  
+  A 30-LED RGB strip gives color-coded feedback:  
+  - 🟩 Green → Normal range  
+  - 🟨 Yellow → Below threshold  
+  - 🔴 Blinking Red → Above threshold  
+
+- **T3: Seed Evaluation Mode**  
+  A **touch button** toggles a **servo lid**, while a **vibration motor** and **pulsing green LEDs** simulate seed agitation based on **potentiometer input**.
+
+- **T4: Distance Alert System**  
+  An **ultrasonic sensor** detects nearby objects (<30 cm). When triggered, the system vibrates and flashes red LEDs while temporarily disabling the servo.
+
+### 📁 Implemented In:
+- `CropCheck_T1_T2.ino`  
+- `CropCheck_T3_T4.ino`
+
+> This project showcases **multi-sensor fusion**, **threshold-based logic**, **PWM control**, and **user interaction** using servos, ultrasonic sensors, and LED visualization.
+
+---
+
+## 🌦️ Project 2: Weather Condition Display System (Wi-Fi + API)
+
+This ESP32-based project connects to the internet via Wi-Fi to fetch live weather data from the **OpenWeatherMap API**. It translates the data into **multisensory feedback** through multiple actuators.
+
+### 📡 Features & Mappings
+
+#### 🌡️ Temperature → RGB LED Strip  
+- `< 0°C` → Blinking **Blue**  
+- `0–8°C` → **Cyan**  
+- `8–16°C` → **Green**  
+- `16–24°C` → **Yellow**  
+- `24–32°C` → **Orange**  
+- `> 32°C` → Blinking **Red**
+
+#### 💨 Wind Speed → Servo Motor  
+- Servo sweep speed is inversely proportional to wind intensity  
+- Wind speeds constrained between 0–20 m/s for smooth motion
+
+#### 💧 Humidity → Vibration Motor  
+- Vibration intensity increases with humidity percentage
+
+#### 📟 LCD Display  
+- Live display of **temperature** and **humidity**
+
+### 📁 Implemented In:
+- `WeatherDisplaySystem.ino`
+
+> This project highlights **Wi-Fi connectivity**, **HTTP GET requests**, **JSON parsing**, and real-time actuator control based on live data.
+
+---
+
+## 🧠 Summary
+
+These projects reflect my ability to merge **software logic with physical hardware control**, enabling **responsive**, **context-aware**, and **human-friendly** systems.  
+They cover essential domains such as:
+- Internet of Things (IoT)
+- Real-time data processing
+- Sensor-actuator synchronization
+- API integration and parsing
+- Arduino + ESP32 development

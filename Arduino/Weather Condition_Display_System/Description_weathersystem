@@ -1,0 +1,62 @@
+# 🌦️ Weather Condition Display System - Arduino ESP32
+
+This project demonstrates how to create a smart environmental feedback system using real-time weather data from a public API.
+ It combines **visual, physical, and tactile** feedback using multiple actuators controlled by an ESP32-based Arduino board.
+
+---
+
+## 📡 Overview
+
+The ESP32 fetches live weather information over Wi-Fi and uses that data to drive:
+
+### 🌡️ Temperature → RGB LED Strip
+- **< 0°C** → Blinking **Blue** (Freezing)
+- **0–8°C** → **Cyan** (Cold)
+- **8–16°C** → **Green** (Mild)
+- **16–24°C** → **Yellow** (Comfortable)
+- **24–32°C** → **Orange** (Warm)
+- **> 32°C** → Blinking **Red** (Hot)
+
+This gives users an immediate and intuitive visual cue of the current temperature.
+
+---
+
+### 💨 Wind Speed → Servo Motor
+- The **servo motor sweeps from 0° to 180° and back**.
+- Movement speed is **inversely proportional to wind speed**:
+  - High wind → fast servo motion  
+  - Low wind → slow servo motion
+- Wind speed is constrained between **0–20 m/s** for realistic behavior.
+
+---
+
+### 💧 Humidity → Vibration Motor
+- The vibration motor's strength **increases proportionally with humidity**.
+- Low humidity → soft vibration  
+- High humidity → strong vibration
+
+This provides a **tactile representation** of the air's moisture content.
+
+---
+
+## 🧠 Microcontroller
+
+An **ESP32** is used as the main controller. It:
+- Connects to Wi-Fi
+- Fetches and parses data from a weather API (e.g., OpenWeatherMap)
+- Controls the actuators based on live sensor values
+
+---
+
+## 📁 Project Structure
+
+This project is implemented in a **single Arduino sketch**:
+WeatherDisplaySystem.ino
+
+
+It includes:
+- Wi-Fi setup and API request logic
+- JSON parsing
+- Value mapping and actuator control (LEDs, servo, vibrator)
+
+---

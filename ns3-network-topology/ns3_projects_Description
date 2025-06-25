@@ -1,0 +1,32 @@
+NS-3 Network Simulation Projects
+================================
+
+This repository contains two beginner-friendly NS-3 simulations that explore basic
+network topologies and queuing behavior.
+
+----------------------------------------
+Project 1: P2P with CSMA – Intro to Topology
+----------------------------------------
+Simulates a hybrid network:
+- Point-to-point link between n0 and n1
+- CSMA LAN with 20+ nodes connected via n1
+- UDP Echo Server on node n0
+- UDP Echo Client on the last CSMA node (e.g., n21)
+
+Goal: Understand how point-to-point and Ethernet (CSMA) links interact
+in a basic network topology.
+
+-----------------------------------------------
+Project 2: TCP Simulation – DropTail vs RED Queue
+-----------------------------------------------
+Simulates a 4-node TCP scenario:
+- Bulk TCP traffic from A and B to D via router C
+- Tests DropTail vs RED (Random Early Detection) queuing at the C–D link
+
+Files:
+- original.cc → DropTail queue
+- red.cc      → RED AQM with custom parameters
+
+Goal: Compare congestion control behavior and throughput between
+basic tail-drop queues and active queue management.
+

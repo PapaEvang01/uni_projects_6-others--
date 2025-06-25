@@ -1,0 +1,30 @@
+🔌 P2P with CSMA – First Taste of Network Topology in NS-3
+This project offers a first hands-on experience with network topology simulation using NS-3. 
+It combines a Point-to-Point (P2P) connection with a CSMA-based Ethernet LAN, showcasing how different types of network links interact in a hybrid environment.
+
+📡 Topology Overview
+A P2P link connects two core nodes (n0 and n1)
+
+Node n1 also acts as a bridge to a CSMA LAN with 20+ additional nodes
+
+A UDP Echo Server is placed on node n0
+
+A UDP Echo Client is placed on the last CSMA node (e.g., n21)
+
+Traffic flows from the LAN across the P2P link to reach the server
+
+⚙️ Configuration Highlights
+P2P Link: 14 Mbps, 10 ms delay
+
+CSMA LAN: 10 Mbps, 25.6 µs delay
+
+UDP Echo: 10 packets of 1024 bytes, 1-second interval
+
+🧪 What This Demonstrates
+Basic NS-3 simulation setup
+
+Mixing different network technologies (point-to-point & Ethernet)
+
+Automatic routing and packet tracing
+
+Simple application-level testing of connectivity

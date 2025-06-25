@@ -1,0 +1,10 @@
+🟢 Row Sum in RISC-V Assembly
+
+This project showcases a low-level implementation of a classic C function that computes the row-wise sum of a 2D array, rewritten entirely in RISC-V Assembly.
+It's a simple but effective demonstration of memory manipulation, control structures, and array traversal using the RISC-V instruction set.
+
+Originally developed as part of a university systems programming lab, this project reflects a strong grasp of hardware-level logic and instruction sequencing.
+It’s ideal for anyone exploring assembly-level computation, embedded systems, or learning how high-level operations translate to low-level instructions.
+
+🔧 Tools used: RARS / Venus (RISC-V emulator)
+📌 Key skills: Register usage, pointer arithmetic, nested loops, 2D memory layout
