@@ -128,6 +128,6 @@ These projects laid the groundwork for future work across three key areas:
 
 ## 👨‍💻 Author
 
-**Vaggelis Papaioannou**  
+**Evangeloss Papaioannou**  
 Department of Electrical & Computer Engineering  
 Democritus University of Thrace
